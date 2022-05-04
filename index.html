@@ -23,25 +23,25 @@
         <div class="container">
             <nav class="main-nav">
                 <!-- логотип -->
-                <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
+                <a href="./index.html" class="main-nav__logo">Web<span class="main-nav__header">Studio</span></a>
                 <!-- навигацыя шапки -->
-                <ul class="site-nav-list">
-                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+                <ul class="site-nav">
+                    <li class=" site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <!-- контакты -->
-            <ul class="auth-nav-list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="auth-link">
-                    <svg class="mail"  width: 16px; height: 12px;>
+            <ul class="auth-nav">
+                <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class="auth-nav__link">
+                    <svg class="auth-nav__mail"  width: 16px; height: 12px;>
                             <use href="./symbol-defs.svg#icon-envelope-hover">
 
                             </use>
                         </svg>info@devstudio.com</a></li>
 
-                <li class="item"><a href="tel:+380961111111" class="auth-link">
-                    <svg class="tel" width="10px" height="16px">
+                <li class="auth-nav__item"><a href="tel:+380961111111" class="auth-nav__link">
+                    <svg class="auth-nav__tel" width="10px" height="16px">
                             <use href="./symbol-defs.svg#icon-smartphone"></use>
                         </svg> +38 096 111 11 11</a></li>
             </ul>
@@ -58,7 +58,7 @@
             <div class="kontainer">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
 
-                <button type="button" class="button-primery" data-modal-open>Заказать услугу</button>
+                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -69,46 +69,46 @@
             <div class="container">
                 <h2 class="visually-hidden ">Наши преймущества</h2>
 
-                <ul class="feature-list">
+                <ul class="feature">
 
-                    <li class="item ">
-                        <div class="icon">
-                            <svg class="button-icon" width="70px" height="70px">
+                    <li class="feature__item ">
+                        <div class="feature__icon">
+                            <svg class="feature-button__icon" width="70px" height="70px">
                                 <use href="./symbol-defs.svg#icon-antenna1"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Внимание к деталям</h3>
-                        <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию
+                        <h3 class="feature__title">Внимание к деталям</h3>
+                        <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
                     </li>
-                    <li class="item ">
-                        <div class="icon">
-                            <svg class="button-icon" width="70px" height="70px">
+                    <li class="feature__item">
+                        <div class="feature__icon">
+                            <svg class="feature-button__icon" width="70px" height="70px">
                                 <use href="./symbol-defs.svg#icon-clock1"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Пунктуальность</h3>
-                        <p class="section-text">Задача организации, в особенности же рамки и место обучения кадров
+                        <h3 class="feature__title">Пунктуальность</h3>
+                        <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет за собой</p>
                     </li>
-                    <li class="item">
-                        <div class="icon">
-                            <svg class="button-icon" width="70px" height="70px">
+                    <li class="feature__item">
+                        <div class="feature__icon">
+                            <svg class="feature-button__icon" width="70px" height="70px">
                                 <use href="./symbol-defs.svg#icon-diagram1"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Планирование</h3>
-                        <p class="section-text">Равным образом консультация с широким активом в значительной степени
+                        <h3 class="feature__title">Планирование</h3>
+                        <p class="feature__text">Равным образом консультация с широким активом в значительной степени
                             обуславливает</p>
                     </li>
-                    <li class="item ">
-                        <div class="icon">
-                            <svg class="button-icon" width="70px" height="70px">
+                    <li class="feature__item">
+                        <div class="feature__icon">
+                            <svg class="feature-button__icon" width="70px" height="70px">
                                 <use href="./symbol-defs.svg#icon-astronaut1"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Современные технологии</h3>
-                        <p class="section-text">Значимость этих проблем настолько очевидна, что реализация плановых
+                        <h3 class="feature__title">Современные технологии</h3>
+                        <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий</p>
                     </li>
                 </ul>
@@ -124,18 +124,18 @@
                 <h2 class="development">Чем мы занимаемся</h2>
 
                 <ul class="photo-list">
-                    <li class="item">
-                        <h3 class="photo-text">Десктопные приложения</h3>
+                    <li class="photo-list__item">
+                        <h3 class="photo-list__text">Десктопные приложения</h3>
                         <img width="370" src="./webstudio-version2.1copy/img(2)(1).jpg" alt="Пример работ">
                     </li>
 
-                    <li class="item">
-                        <h3 class="photo-text">Мобильные приложения</h3>
+                    <li class="photo-list__item">
+                        <h3 class="photo-list__text">Мобильные приложения</h3>
                         <img width="370" src="./webstudio-version2.1copy/img(3)(1).jpg" alt="Пример работ">
                     </li>
 
-                    <li class="item">
-                        <h3 class="photo-text">Дизайнерские решения</h3>
+                    <li class="photo-list__item">
+                        <h3 class="photo-list__text">Дизайнерские решения</h3>
                         <img width="370" src="./webstudio-version2.1copy/img(4)(1).jpg" alt="Пример работ">
                     </li>
 
@@ -308,46 +308,46 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="clients">Постоянные клиенты</h2>
-                <ul class="icon-company-list">
-                    <li class="item">
-                        <a href="" class="icon-company">
-                            <svg class="button-icon" width="106px" height="60px">
+                <h2 class="command">Постоянные клиенты</h2>
+                <ul class="company-list">
+                    <li class="company-list__item ">
+                        <a href="" class="company-list__icon">
+                            <svg class="company-list__svg" width="106px" height="60px">
                                 <use href="./symbol-defs.svg#icon-Logo-1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="" class="icon-company">
-                            <svg class="button-icon" width="106px" height="60px">
+                    <li class="company-list__item ">
+                        <a href="" class="company-list__icon">
+                            <svg class="company-list__svg" width="106px" height="60px">
                                 <use href="./symbol-defs.svg#icon-Logo"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="" class="icon-company">
-                            <svg class="button-icon" width="106px" height="60px">
+                    <li class="company-list__item ">
+                        <a href="" class="company-list__icon">
+                            <svg class="company-list__svg" width="106px" height="60px">
                                 <use href="./symbol-defs.svg#icon-Logo-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="" class="icon-company">
-                            <svg class="button-icon" width="106px" height="60px">
+                    <li class="company-list__item ">
+                        <a href="" class="company-list__icon">
+                            <svg class="company-list__svg" width="106px" height="60px">
                                 <use href="./symbol-defs.svg#icon-Logo-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="" class="icon-company">
-                            <svg class="button-icon" width="106px" height="60px">
+                    <li class="company-list__item ">
+                        <a href="" class="company-list__icon">
+                            <svg class="company-list__svg" width="106px" height="60px">
                                 <use href="./symbol-defs.svg#icon-Logo-4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="" class="icon-company">
-                            <svg class="button-icon" width="106px" height="60px">
+                    <li class="company-list__item ">
+                        <a href="" class="company-list__icon">
+                            <svg class="company-list__svg" width="106px" height="60px">
                                 <use href="./symbol-defs.svg#icon-Logo-5"></use>
                             </svg>
                         </a>
@@ -366,7 +366,7 @@
             <div class="footer-adress">
                 <!-- логотип -->
 
-                <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+                <a href="./index.html" class="main-nav__logo">Web<span class="logo-footer">Studio</span></a>
 
                 <address>
 
@@ -376,9 +376,9 @@
                                 href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                                 target="blank" class="geolocation">г. Киев, пр-т Леси Украинки, 26</a></li>
                         <!-- контакты -->
-                        <li class="item"><a href="mailto:info@devstudio.com" class="auth-link">info@devstudio.com</a>
+                        <li class="item"><a href="mailto:info@devstudio.com" class="auth-nav__link">info@devstudio.com</a>
                         </li>
-                        <li class="item"><a href="tel:+380961111111" class="auth-link">+38 096 111 11 11</a></li>
+                        <li class="item"><a href="tel:+380961111111" class="auth-nav__link">+38 096 111 11 11</a></li>
 
                 </address>
             </div>

@@ -17,25 +17,26 @@
     <div class="container">
         <nav class="main-nav">
             <!-- логотип -->
-            <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
+            <a href="./index.html" class="main-nav__logo">Web<span class="main-nav__header">Studio</span></a>
             <!-- навигацыя шапки -->
-            <ul class="site-nav-list">
-                <li class="item"><a href="./index.html" class="link ">Студия</a></li>
-                <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li class="item"><a href="" class="link">Контакты</a></li>
+            <ul class="site-nav">
+                <li class=" site-nav__item"><a href="./index.html"
+                        class="site-nav__link ">Студия</a></li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
         </nav>
         <!-- контакты -->
-        <ul class="auth-nav-list">
-            <li class="item"><a href="mailto:info@devstudio.com" class="auth-link">
-                    <svg class="mail" width: 16px; height: 12px;>
+        <ul class="auth-nav">
+            <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class="auth-nav__link">
+                    <svg class="auth-nav__mail" width: 16px; height: 12px;>
                         <use href="./symbol-defs.svg#icon-envelope-hover">
 
                         </use>
                     </svg>info@devstudio.com</a></li>
 
-            <li class="item"><a href="tel:+380961111111" class="auth-link">
-                    <svg class="tel" width="10px" height="16px">
+            <li class="auth-nav__item"><a href="tel:+380961111111" class="auth-nav__link">
+                    <svg class="auth-nav__tel" width="10px" height="16px">
                         <use href="./symbol-defs.svg#icon-smartphone"></use>
                     </svg> +38 096 111 11 11</a></li>
         </ul>
