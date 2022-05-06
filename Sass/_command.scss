@@ -1,0 +1,87 @@
+.section-command {
+  background-color: var(--primery-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.command {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.command-card {
+  display: flex;
+}
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card__profession {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.card-soc__list {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+.card-soc__item + .card-soc__item {
+  margin-left: 10px;
+}
+
+.command-card__item {
+  background-color: var(--footer-logo-color);
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.command-card__item:last-child {
+  margin-right: 0;
+}
+.card-soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-soc__link:hover {
+  background-color: var(--accent-color);
+}
+
+.card-soc__link:focus {
+  background-color: var(--accent-color);
+}
+
+.card-soc__link:hover .master-soc-icon {
+  fill: var(--footer-logo-color);
+}
+
+.card-soc__link:focus .master-soc-icon {
+  fill: var(--footer-logo-color);
+}
+
+.card-soc__icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
+}
