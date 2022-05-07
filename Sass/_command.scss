@@ -73,15 +73,16 @@
     background-color: var(--accent-color);
   }
 }
-.card-soc__link:hover .card-soc__icon {
-  fill: var(--footer-logo-color);
-}
-.card-soc__link:focus .card-soc__icon {
-  fill: var(--footer-logo-color);
-}
+
 .card-soc__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #afb1b8;
+  .card-soc__link:hover & {
+    fill: var(--footer-logo-color);
+  }
+  .card-soc__link:focus & {
+    fill: var(--footer-logo-color);
+  }
 }
