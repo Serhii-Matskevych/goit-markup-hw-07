@@ -9,6 +9,9 @@
   &__item:last-child {
     margin-right: 0;
   }
+  &__svg {
+    fill: currentColor;
+  }
 }
 
 .company-list__icon {
@@ -33,8 +36,4 @@
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
   }
-}
-
-.company-list__svg {
-  fill: currentColor;
 }
