@@ -72,16 +72,13 @@
   &:focus {
     background-color: var(--accent-color);
   }
-
-  &:hover .master-soc-icon {
-    fill: var(--footer-logo-color);
-  }
-
-  &:focus .master-soc-icon {
-    fill: var(--footer-logo-color);
-  }
 }
-
+.card-soc__link:hover .card-soc__icon {
+  fill: var(--footer-logo-color);
+}
+.card-soc__link:focus .card-soc__icon {
+  fill: var(--footer-logo-color);
+}
 .card-soc__icon {
   transition-property: fill;
   transition-duration: 250ms;
