@@ -1,13 +1,14 @@
 .company-list {
   display: flex;
   justify-content: center;
-}
 
-.company-list__item {
-  margin-right: 30px;
-}
-.company-list__item:last-child {
-  margin-right: 0;
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .company-list__icon {
@@ -22,16 +23,16 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.company-list__icon:hover {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
+  &:hover {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
 
-.company-list__icon:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .company-list__svg {

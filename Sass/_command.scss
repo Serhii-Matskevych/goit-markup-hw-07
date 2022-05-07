@@ -13,25 +13,39 @@
 
 .command-card {
   display: flex;
+
+  &__item {
+    background-color: var(--footer-logo-color);
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__profession {
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
-.card__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.card__profession {
-  color: var(--title-text-color);
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
+
 .card-soc__list {
   margin-top: 16px;
   display: flex;
@@ -41,17 +55,6 @@
   margin-left: 10px;
 }
 
-.command-card__item {
-  background-color: var(--footer-logo-color);
-  margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.command-card__item:last-child {
-  margin-right: 0;
-}
 .card-soc__link {
   width: 44px;
   height: 44px;
@@ -62,21 +65,21 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.card-soc__link:hover {
-  background-color: var(--accent-color);
-}
+  &:hover {
+    background-color: var(--accent-color);
+  }
 
-.card-soc__link:focus {
-  background-color: var(--accent-color);
-}
+  &:focus {
+    background-color: var(--accent-color);
+  }
 
-.card-soc__link:hover .master-soc-icon {
-  fill: var(--footer-logo-color);
-}
+  &:hover .master-soc-icon {
+    fill: var(--footer-logo-color);
+  }
 
-.card-soc__link:focus .master-soc-icon {
-  fill: var(--footer-logo-color);
+  &:focus .master-soc-icon {
+    fill: var(--footer-logo-color);
+  }
 }
 
 .card-soc__icon {
