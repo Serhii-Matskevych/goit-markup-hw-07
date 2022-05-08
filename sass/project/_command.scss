@@ -3,7 +3,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.command {
+.section__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -11,7 +11,7 @@
   margin-bottom: 50px;
 }
 
-.command-card {
+.command {
   display: flex;
 
   &__item {
@@ -25,19 +25,14 @@
   &__item:last-child {
     margin-right: 0;
   }
-}
-.card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  &__name {
+  &__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     margin-bottom: 10px;
     text-align: center;
   }
-  &__profession {
+  &__text {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.18;
@@ -45,17 +40,21 @@
     text-align: center;
   }
 }
+.command__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-.card-soc__list {
+.social {
   margin-top: 16px;
   display: flex;
   justify-content: center;
 }
-.card-soc__item + .card-soc__item {
+.social__item + .social__item {
   margin-left: 10px;
 }
 
-.card-soc__link {
+.social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -74,15 +73,15 @@
   }
 }
 
-.card-soc__icon {
+.social__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #afb1b8;
-  .card-soc__link:hover & {
+  .social__link:hover & {
     fill: var(--footer-logo-color);
   }
-  .card-soc__link:focus & {
+  .social__link:focus & {
     fill: var(--footer-logo-color);
   }
 }

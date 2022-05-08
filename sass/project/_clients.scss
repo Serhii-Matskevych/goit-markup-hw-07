@@ -9,12 +9,12 @@
   &__item:last-child {
     margin-right: 0;
   }
-  &__svg {
+  &__icon {
     fill: currentColor;
   }
 }
 
-.company-list__icon {
+.company-list__link {
   color: #afb1b8;
   display: flex;
   align-items: center;

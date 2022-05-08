@@ -11,7 +11,7 @@
   &__item:last-child {
     margin-right: 0px;
   }
-  &__icon {
+  &__box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@
     letter-spacing: 0.03em;
     margin-top: 0;
   }
-  &-button__icon {
+  &__icon {
     fill: currentColor;
   }
 }

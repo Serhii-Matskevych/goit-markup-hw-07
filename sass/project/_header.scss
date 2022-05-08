@@ -13,11 +13,11 @@
   display: flex;
   align-items: center;
   vertical-align: middle;
-  &__header {
-    color: var(--header-logo-color);
-  }
 }
-.main-nav__logo {
+.logo__studio {
+  color: var(--header-logo-color);
+}
+.logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -100,16 +100,9 @@
   &__link:focus {
     color: var(--accent-color);
   }
-  &__tel {
+  &__icon {
     margin-right: 10px;
     vertical-align: middle;
     fill: currentColor;
-  }
-  &__mail {
-    vertical-align: middle;
-    fill: currentColor;
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
   }
 }
