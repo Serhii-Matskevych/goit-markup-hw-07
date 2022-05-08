@@ -64,12 +64,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background-color: var(--accent-color);
-  }
-
+  &:hover,
   &:focus {
     background-color: var(--accent-color);
+    fill: var(--footer-logo-color);
   }
 }
 
@@ -78,10 +76,4 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #afb1b8;
-  .social__link:hover & {
-    fill: var(--footer-logo-color);
-  }
-  .social__link:focus & {
-    fill: var(--footer-logo-color);
-  }
 }
